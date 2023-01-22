@@ -1,0 +1,11 @@
+package com.sanketscode.hellospring.game;
+
+public class GameRunner {
+	
+	MarioGame game;
+	
+	public GameRunner(MarioGame game){
+		this.game = game;
+	}
+
+}

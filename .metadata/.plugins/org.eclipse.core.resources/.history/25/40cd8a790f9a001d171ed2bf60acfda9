@@ -1,0 +1,19 @@
+package com.sanketscode.hellospring;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+
+
+import com.sanketscode.hellospring.game.GamingConsole;
+import com.sanketscode.hellospring.game.PacmanGame;
+@Configuration
+public class GamingConfiguration {
+	
+	@Bean
+	public GamingConsole game() {
+		return new PacmanGame();
+	}
+	
+
+}

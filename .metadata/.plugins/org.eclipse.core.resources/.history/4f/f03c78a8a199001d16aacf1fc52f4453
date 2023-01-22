@@ -1,0 +1,16 @@
+package com.sanketscode.hellospring;
+
+import com.sanketscode.hellospring.game.GameRunner;
+import com.sanketscode.hellospring.game.MarioGame;
+
+public class AppGamingBasicJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		var marioGame = new  MarioGame();
+		var gameRunner = new GameRunner(marioGame);
+		gameRunner.run();
+
+	}
+
+}

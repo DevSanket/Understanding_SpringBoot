@@ -1,0 +1,10 @@
+package com.sanketscode.hellospring;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class HelloWorldConfiguration {
+	
+	
+
+}
