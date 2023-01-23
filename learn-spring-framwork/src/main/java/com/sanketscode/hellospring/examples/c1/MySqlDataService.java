@@ -1,8 +1,10 @@
 package com.sanketscode.hellospring.examples.c1;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+//@Component
+@Repository
 public class MySqlDataService implements DataService {
 	
 	@Override
