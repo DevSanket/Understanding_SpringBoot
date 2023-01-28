@@ -4,11 +4,11 @@
 	</head>
 	<body>
 	
-		Welcome To in28Minutes
-		 
-		<div> Hello ${name} </div>
-		<div>
+		<div class="container">
+		<h1> Welcome ${name}</h1>
+
 		<a href="list-todos">Manage</a> your todos
+
 		</div>
 		
 	</body>
