@@ -48,13 +48,7 @@ public class TodoController {
 	
 	@RequestMapping(value="add-todo",method=RequestMethod.POST)
 	public String addNewTodo(ModelMap model,@Valid Todo todo,BindingResult result) {
-		
-		//Hard Code Validation
-//		System.out.println(description);
-//		if(description == null || (String)description == "") {
-//			model.addAttribute("error","Please Enter a Value");
-//			return "addTodo";
-//		}
+
 		
 		if(result.hasErrors()) {
 			return "addTodo";
@@ -63,6 +57,16 @@ public class TodoController {
 		String username = (String)model.get("name");
 		todoService.addTodo(username, todo.getDescription(), LocalDate.now().plusYears(1), false);
 		return "redirect:list-todos";
+	}
+	
+	@RequestMapping("delete-todo")
+	public String deleteTodo(@RequestParam int id) {
+		
+		//Delete the todo with specific ID
+		todoService.deleteById(id);
+		return "redirect:list-todos";
+		
+		
 	}
 	
 
