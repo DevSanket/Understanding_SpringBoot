@@ -1,5 +1,0 @@
-package com.sanketscode.hellospring.game;
-
-public interface GamingConsole {
-
-}

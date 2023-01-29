@@ -17,4 +17,8 @@
 		<item key="assumeCloneReturnsSameType" value="true"/>
 		<item key="leaveUnconstrainedRaw" value="true"/>
 	</section>
+	<section name="RefactoringWizard.Externalize strings in &apos;TodoController.java&apos;">
+		<item key="width" value="598"/>
+		<item key="height" value="462"/>
+	</section>
 </section>

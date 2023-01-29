@@ -89,4 +89,12 @@
 	<section name="ClasspathContainerSelectionPage">
 		<item key="index" value="3"/>
 	</section>
+	<section name="nls_accessor_history">
+		<section name="0">
+			<item key="accessorName" value="Messages"/>
+			<item key="accessorPackage" value="=TodoApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sanketcode.spring.TodoApp.todo"/>
+			<item key="bundleName" value="messages.properties"/>
+			<item key="bundlePackage" value="=TodoApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sanketcode.spring.TodoApp.todo"/>
+		</section>
+	</section>
 </section>
