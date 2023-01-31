@@ -21,4 +21,9 @@
 		<item key="width" value="598"/>
 		<item key="height" value="462"/>
 	</section>
+	<section name="ExtractTempWizard">
+		<item key="declareFinal" value="false"/>
+		<item key="declarevariableTypeVar" value="false"/>
+		<item key="replaceOccurrences" value="true"/>
+	</section>
 </section>

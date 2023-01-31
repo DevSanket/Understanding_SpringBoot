@@ -97,4 +97,9 @@
 			<item key="bundlePackage" value="=TodoApp/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.sanketcode.spring.TodoApp.todo"/>
 		</section>
 	</section>
+	<section name="ExtractMethodWizard">
+		<item key="ThrowRuntimeExceptions" value="false"/>
+		<item key="GenerateJavadoc" value="false"/>
+		<item key="AccessModifier" value="2"/>
+	</section>
 </section>
