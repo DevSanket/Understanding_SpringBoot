@@ -2,12 +2,25 @@ package com.sanketcode.spring.TodoApp.todo;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
+//JPA
+// BEAN -> Database
 
 
+@Entity
 public class Todo {
 	
+	public Todo() {
+		
+	}
+	
+	
+	@Id
+	@GeneratedValue
 	private int id;
 	private String username;
 	
