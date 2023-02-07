@@ -2,17 +2,24 @@ package com.sanketscode.rest.webservices.restfulwebservices.user;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 public class User {
 	private Integer id;
 	
+	//Customizing field name in response
     @Size(min=2,message="Name should have at least 2 characters")
+    @JsonProperty("user_name")
 	private String name;
 	
 	@Past(message="Birth Date should be valid")
+	@JsonProperty("birth_name")
 	private LocalDate birthDate;
+	
+	
 	public User(Integer id, String name, LocalDate birthDate) {
 		super();
 		this.id = id;
