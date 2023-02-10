@@ -64,6 +64,11 @@
 			<optional>true</optional>
 		</dependency> 
 		
+		<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
+		
 		
 	<!--	<dependency>
 			<groupId>com.h2database</groupId>
@@ -82,6 +87,8 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	
 
 	<build>
 		<plugins>
