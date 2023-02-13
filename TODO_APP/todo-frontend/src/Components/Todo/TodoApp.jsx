@@ -1,12 +1,6 @@
 import React from "react";
 import "./TodoApp.css";
-import {
-  BrowserRouter,
-  Navigate,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import LogoutComponent from "./LogoutComponent";
 import FooterComponent from "./FooterComponent";
@@ -16,6 +10,7 @@ import ErrorComponent from "./ErrorComponents";
 import WelcomeComponent from "./WelcomeComponent";
 import LoginComponent from "./LoginComponent";
 import AuthProvider, { useAuth } from "./security/AuthContext";
+import TodoComponent from "./TodoComponent";
 
 function AuthenticatedRoute({ children }) {
   // const navigate = useNavigate();
@@ -50,6 +45,14 @@ export default function TodoApp() {
               element={
                 <AuthenticatedRoute>
                   <ListTodosComponent />
+                </AuthenticatedRoute>
+              }
+            />
+            <Route
+              path="/todos/:id"
+              element={
+                <AuthenticatedRoute>
+                  <TodoComponent />
                 </AuthenticatedRoute>
               }
             />

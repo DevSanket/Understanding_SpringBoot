@@ -11,8 +11,8 @@ export default function LoginComponent() {
 
   const authcontext = useAuth();
 
-  const handleSubmit = () => {
-    if (authcontext.login(username, password)) {
+  const handleSubmit = async () => {
+    if (await authcontext.login(username, password)) {
       setSuccessMsg(true);
       navigate(`/welcome/${username}`);
     } else {

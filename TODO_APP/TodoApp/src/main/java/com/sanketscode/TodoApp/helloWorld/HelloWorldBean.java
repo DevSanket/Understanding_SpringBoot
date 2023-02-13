@@ -1,4 +1,6 @@
-package com.sanketscode.Todobackend.helloworld;
+package com.sanketscode.TodoApp.helloWorld;
+
+
 
 public class HelloWorldBean {
 	

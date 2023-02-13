@@ -1,10 +1,10 @@
-package com.sanketscode.Todobackend;
+package com.sanketscode.TodoApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TodoBackendApplicationTests {
+class TodoAppApplicationTests {
 
 	@Test
 	void contextLoads() {
